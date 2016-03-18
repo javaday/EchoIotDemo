@@ -5,6 +5,10 @@ This demonstration is an integration between an Amazon Echo and a [Rock's BBQ](h
 
 You will need to complete the following steps to re-create the integration.
 
+1. First ordered list item
+2. Another item
+⋅⋅* Unordered sub-list.
+
 1. Create the necessary accounts.
 .. * [Amazon AWS Account](https://www.amazon.com/ap/signin)
 .. * [Firebase Account](https://www.firebase.com/login/)
