@@ -10,11 +10,12 @@ You will need to complete the following steps to re-create the integration.
   * [Firebase Account](https://www.firebase.com/login/)
 2. Create the AWS lambda functions.
   * deviceStateSave ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/deviceStateSave))
+  * quemesh ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/quemesh))
 3. Configure an IoT thing in Amazon IoT.
   * Create a thing resource.
   * Connect a device and download the certs.
-  * Create a rule to forward messages to the 'deviceStateSave' lambda function.
-4. 
+  * Create a rule (SELECT * FROM 'quemesh-device-state') to forward messages to the 'deviceStateSave' lambda function.
+4. Create and configure an Alexa Skills application.
 
 You will need to replace the settings in ALL-CAPS in the following files:
 
