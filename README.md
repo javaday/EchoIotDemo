@@ -9,7 +9,7 @@ You will need to complete the following steps to re-create the integration.
   * [Amazon AWS Account](https://www.amazon.com/ap/signin)
   * [Firebase Account](https://www.firebase.com/login/)
 2. Create the AWS lambda functions.
-  * deviceStateSave [Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/deviceStateSave)
+  * deviceStateSave ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/deviceStateSave))
 3. Configure an IoT thing in Amazon IoT.
   * Create a thing resource.
   * Connect a device and download the certs.
