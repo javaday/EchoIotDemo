@@ -6,8 +6,8 @@ This demonstration is an integration between an Amazon Echo and a [Rock's BBQ](h
 You will need to complete the following steps to re-create the integration.
 
 1. Create the necessary accounts.
-..* [Amazon AWS Account](https://www.amazon.com/ap/signin)
-..* [Firebase Account](https://www.firebase.com/login/)
+.. * [Amazon AWS Account](https://www.amazon.com/ap/signin)
+.. * [Firebase Account](https://www.firebase.com/login/)
 2. Congigure an IoT thing in Amazon IoT.
 ..* Create a thing resource.
 ..* Connect a device and download the certs.
