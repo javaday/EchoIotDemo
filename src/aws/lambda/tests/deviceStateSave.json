@@ -1,0 +1,11 @@
+{ 
+    "device": "Stoker",
+    "id": "F10000110A69A830",
+    "probe": "Brisket",
+    "timestamp": 1457755858490,
+    "type": "None",
+    "targetTemp": 225,
+    "highTemp": 200,
+    "lowTemp": 32,
+    "currentTemp": 67.9 
+}

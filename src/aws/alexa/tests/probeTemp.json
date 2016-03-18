@@ -1,0 +1,30 @@
+{
+  "session": {
+    "sessionId": "SessionId.7ec27147-8483-427c-9d8e-6e6a22ab5034",
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.YOUR-AMAZON-ECHO-APP-ID"
+    },
+    "user": {
+      "userId": "amzn1.echo-sdk-account.YOUR-AMAZON-ECHO-SDK-ACCOUNT-ID"
+    },
+    "new": true
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.3afe4bad-488d-4625-952d-da66144c8c75",
+    "timestamp": "2016-03-17T06:04:39Z",
+    "intent": {
+      "name": "ProbeTempIntent",
+      "slots": {
+        "controller": {
+          "name": "controller",
+          "value": "stoker"
+        },
+        "probe": {
+          "name": "probe",
+          "value": "brisket"
+        }
+      }
+    }
+  }
+}

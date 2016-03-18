@@ -1,0 +1,77 @@
+{
+  "intents": [
+    {
+      "intent": "ControllerStatusIntent",
+      "slots": [
+        {
+          "name": "controller",
+          "type": "LIST_OF_CONTROLLERS"
+        }
+      ]
+    },
+    {
+      "intent": "ProbeTempIntent",
+      "slots": [
+        {
+          "name": "controller",
+          "type": "LIST_OF_CONTROLLERS"
+        },
+        {
+          "name": "probe",
+          "type": "LIST_OF_PROBES"
+        }
+      ]
+    },
+    {
+      "intent": "ProbeTargetIntent",
+      "slots": [
+        {
+          "name": "controller",
+          "type": "LIST_OF_CONTROLLERS"
+        },
+        {
+          "name": "probe",
+          "type": "LIST_OF_PROBES"
+        },
+        {
+          "name": "target",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "ProbeHighTempIntent",
+      "slots": [
+        {
+          "name": "controller",
+          "type": "LIST_OF_CONTROLLERS"
+        },
+        {
+          "name": "probe",
+          "type": "LIST_OF_PROBES"
+        },
+        {
+          "name": "target",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "ProbeLowTempIntent",
+      "slots": [
+        {
+          "name": "controller",
+          "type": "LIST_OF_CONTROLLERS"
+        },
+        {
+          "name": "probe",
+          "type": "LIST_OF_PROBES"
+        },
+        {
+          "name": "target",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    }    
+  ]
+}

@@ -1,0 +1,28 @@
+ControllerStatusIntent what is my {controller} status
+ControllerStatusIntent get my {controller} status
+ControllerStatusIntent give me my {controller} status
+ProbeTempIntent what is my {controller} {probe} temperature
+ProbeTempIntent get my {controller} {probe} temperature
+ProbeTempIntent get my {controller} {probe}
+ProbeTempIntent give me my {controller} {probe} temperature
+ProbeTempIntent is my {controller} {probe} done
+ProbeTargetIntent set my {controller} {probe} target to {target} degrees
+ProbeTargetIntent set my {controller} {probe} target to {target}
+ProbeTargetIntent update my {controller} {probe} target to {target} degrees
+ProbeTargetIntent update my {controller} {probe} target to {target}
+ProbeHighTempIntent set my {controller} {probe} high temperature to {target} degrees
+ProbeHighTempIntent set my {controller} {probe} high temperature to {target}
+ProbeHighTempIntent update my {controller} {probe} high temperature to {target} degrees
+ProbeHighTempIntent update my {controller} {probe} high temperature to {target}
+ProbeHighTempIntent set my {controller} {probe} high temp to {target} degrees
+ProbeHighTempIntent set my {controller} {probe} high temp to {target}
+ProbeHighTempIntent update my {controller} {probe} high temp to {target} degrees
+ProbeHighTempIntent update my {controller} {probe} high temp to {target}
+ProbeLowTempIntent set my {controller} {probe} low temperature to {target} degrees
+ProbeLowTempIntent set my {controller} {probe} low temperature to {target}
+ProbeLowTempIntent update my {controller} {probe} low temperature to {target} degrees
+ProbeLowTempIntent update my {controller} {probe} low temperature to {target}
+ProbeLowTempIntent set my {controller} {probe} high low to {target} degrees
+ProbeLowTempIntent set my {controller} {probe} high low to {target}
+ProbeLowTempIntent update my {controller} {probe} low temp to {target} degrees
+ProbeLowTempIntent update my {controller} {probe} low temp to {target}

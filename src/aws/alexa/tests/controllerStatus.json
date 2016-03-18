@@ -1,0 +1,26 @@
+{
+  "session": {
+    "sessionId": "SessionId.33398e83-6e3a-4ef2-8a1f-423021b8c533",
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.YOUR-AMAZON-ECHO-APP-ID"
+    },
+    "user": {
+      "userId": "amzn1.echo-sdk-account.YOUR-AMAZON-ECHO-SDK-ACCOUNT-ID"
+    },
+    "new": true
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.10fd0d7f-bea9-4a9a-bcff-849d584e4420",
+    "timestamp": "2016-03-17T06:03:24Z",
+    "intent": {
+      "name": "ControllerStatusIntent",
+      "slots": {
+        "controller": {
+          "name": "controller",
+          "value": "stoker"
+        }
+      }
+    }
+  }
+}
