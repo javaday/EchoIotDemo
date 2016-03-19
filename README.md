@@ -5,10 +5,11 @@ This demonstration is an integration between an Amazon Echo and a [Rock's BBQ](h
 
 You will need to complete the following steps to re-create the integration.
 
+* [Required Accounts](#accounts)
 1. Create the necessary accounts.
-  * [Amazon AWS Account](https://www.amazon.com/ap/signin)
-  * [Firebase Account](https://www.firebase.com/login/)
-2. Update the following files with the appropriate account data.
+
+2. Create an Alexa Skills application.
+3. Update the following source files with the appropriate account data.
   * src/device/config.js
     * YOUR-DEVICE-REST-API-ENDPOINT-HOST
     * YOUR-DEVICE-THING-NAME
@@ -17,33 +18,33 @@ You will need to complete the following steps to re-create the integration.
     * YOUR-FIREBASE-APP-NAME
     * YOUR-FIREBASE-EMAIL
     * YOUR-FIREBASE-PASSWORD
-
-3. Create the AWS lambda functions.
+  * src/aws/lambda/quemesh/device.js
+    * YOUR-DEVICE-REST-API-ENDPOINT-HOST
+  * src/aws/lambda/deviceStateSave/config.js
+    * YOUR-FIREBASE-APP-NAME
+    * YOUR-FIREBASE-EMAIL
+    * YOUR-FIREBASE-PASSWORD
+  * src/aws/alexa/tests/*.json
+    * YOUR-AMAZON-ECHO-APP-ID
+    * YOUR-AMAZON-ECHO-SDK-ACCOUNT-ID
+4. Create the AWS lambda functions.
   * deviceStateSave ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/deviceStateSave))
   * quemesh ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/quemesh))
-3. Configure an IoT thing in Amazon IoT.
-  * Create a thing resource.
+5. Configure an IoT thing in Amazon IoT.
   * Connect a device and download the certs.
+    * Download to src/device/certs/
+    * Rename to 
   * Create a rule (SELECT * FROM 'quemesh-device-state') to forward messages to the 'deviceStateSave' lambda function.
-4. Create and configure an Alexa Skills application.
 
-You will need to replace the settings in ALL-CAPS in the following files:
+<a name="accounts"></a>
+## Required Accounts
+  * [Amazon AWS Account](https://www.amazon.com/ap/signin)
+  * [Firebase Account](https://www.firebase.com/login/)
 
-	
 src/device/certs/
 	root-CA.crt
 	certificate.pem.crt
 	private.pem.key
 
 	
-src/aws/lambda/quemesh/device.js
-	YOUR-DEVICE-REST-API-ENDPOINT-HOST
-	
-src/aws/lambda/deviceStateSave/config.js
-	YOUR-FIREBASE-APP-NAME
-	YOUR-FIREBASE-EMAIL
-	YOUR-FIREBASE-PASSWORD
-	
-src/aws/alexa/tests/*.json
-	YOUR-AMAZON-ECHO-APP-ID
-	YOUR-AMAZON-ECHO-SDK-ACCOUNT-ID
+
