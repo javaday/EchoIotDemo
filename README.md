@@ -3,19 +3,17 @@ A demo of integrating the Amazon Echo with an Amazon IoT connected device.
 
 This demonstration is an integration between an Amazon Echo and a [Rock's BBQ](https://www.rocksbarbque.com/) Stoker II Power Draft System via an IoT connected device - a Raspberry Pi 2 in this instance.
 
-You will need to complete the following steps to re-create the integration.
-
 * [Required Accounts](#accounts)
 * [Alexa Skills Application](#alexa)
-* [AWS Lambda Functions](#lambda)
 * [AWS IoT](#iot)
 
 <a name="accounts"></a>
 ## Required Accounts
+You will need an Amazon AWS developer account and a Firebase account. You will also need to create a Firebase application.
   * [Amazon AWS Account](https://www.amazon.com/ap/signin)
   * [Firebase Account](https://www.firebase.com/login/)
 
-**Note:** The following source files will need to be updated with the appropriate account data.
+**Note:** The following source files will need to be updated with the respective account data. You won't know the DEVICE and ECHO settings until you complete [Alexa Skills Application](#alexa) and [AWS IoT](#iot) steps below.
   * src/device/config.js
     * YOUR-DEVICE-REST-API-ENDPOINT-HOST
     * YOUR-DEVICE-THING-NAME
@@ -36,9 +34,8 @@ You will need to complete the following steps to re-create the integration.
 
 <a name="alexa"></a>
 ## Alexa Skills Application
-
-<a name="lambda"></a>
-## AWS Lambda Functions
+1. Use this tutorial as a guide: [Developing an Alexa Skill as a Lambda Function](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/developing-an-alexa-skill-as-a-lambda-function)
+2. Create the following lambda functions:
   * deviceStateSave ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/deviceStateSave))
   * quemesh ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/quemesh))
 
