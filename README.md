@@ -40,7 +40,7 @@ You will need an Amazon AWS developer account and a Firebase account. You will a
   * quemesh ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/quemesh))
 3. Use the [intents.txt](https://github.com/javaday/EchoIotDemo/blob/master/src/aws/alexa/intents.txt) for the Intents Schema.
 4. Use the [listOfAlarms.txt](https://github.com/javaday/EchoIotDemo/blob/master/src/aws/alexa/listOfAlarms.txt), [listOfControllers.txt](https://github.com/javaday/EchoIotDemo/blob/master/src/aws/alexa/listOfControllers.txt), and [listOfProbes.txt](https://github.com/javaday/EchoIotDemo/blob/master/src/aws/alexa/listOfProbes.txt) for the Custom Slot Types.
-4. Use the [uterances.txt](https://github.com/javaday/EchoIotDemo/blob/master/src/aws/alexa/utterances.txt) for the Sample Utterances.
+4. Use the [utterances.txt](https://github.com/javaday/EchoIotDemo/blob/master/src/aws/alexa/utterances.txt) for the Sample Utterances.
 
 <a name="iot"></a>
 ## AWS IoT
