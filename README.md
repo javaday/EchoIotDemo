@@ -35,12 +35,15 @@ You will need to complete the following steps to re-create the integration.
   * [Firebase Account](https://www.firebase.com/login/)
 
 <a name="alexa"></a>
+## Alexa Skills Application
 
 <a name="lambda"></a>
+## AWS Lambda Functions
   * deviceStateSave ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/deviceStateSave))
   * quemesh ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/quemesh))
 
 <a name="iot"></a>
+## AWS IoT
   * Connect a device and download the certs.
     * Download to src/device/certs/
     * Rename to 
