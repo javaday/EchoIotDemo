@@ -6,9 +6,10 @@ This demonstration is an integration between an Amazon Echo and a [Rock's BBQ](h
 You will need to complete the following steps to re-create the integration.
 
 * [Required Accounts](#accounts)
-1. Create the necessary accounts.
+* [Alexa Skills Application](#alexa)
+* [AWS Lambda Functions](#lambda)
+* [AWS IoT](#iot)
 
-2. Create an Alexa Skills application.
 3. Update the following source files with the appropriate account data.
   * src/device/config.js
     * YOUR-DEVICE-REST-API-ENDPOINT-HOST
@@ -27,19 +28,23 @@ You will need to complete the following steps to re-create the integration.
   * src/aws/alexa/tests/*.json
     * YOUR-AMAZON-ECHO-APP-ID
     * YOUR-AMAZON-ECHO-SDK-ACCOUNT-ID
-4. Create the AWS lambda functions.
-  * deviceStateSave ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/deviceStateSave))
-  * quemesh ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/quemesh))
-5. Configure an IoT thing in Amazon IoT.
-  * Connect a device and download the certs.
-    * Download to src/device/certs/
-    * Rename to 
-  * Create a rule (SELECT * FROM 'quemesh-device-state') to forward messages to the 'deviceStateSave' lambda function.
 
 <a name="accounts"></a>
 ## Required Accounts
   * [Amazon AWS Account](https://www.amazon.com/ap/signin)
   * [Firebase Account](https://www.firebase.com/login/)
+
+<a name="alexa"></a>
+
+<a name="lambda"></a>
+  * deviceStateSave ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/deviceStateSave))
+  * quemesh ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/quemesh))
+
+<a name="iot"></a>
+  * Connect a device and download the certs.
+    * Download to src/device/certs/
+    * Rename to 
+  * Create a rule (SELECT * FROM 'quemesh-device-state') to forward messages to the 'deviceStateSave' lambda function.
 
 src/device/certs/
 	root-CA.crt
