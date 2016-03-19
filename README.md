@@ -8,7 +8,17 @@ You will need to complete the following steps to re-create the integration.
 1. Create the necessary accounts.
   * [Amazon AWS Account](https://www.amazon.com/ap/signin)
   * [Firebase Account](https://www.firebase.com/login/)
-2. Create the AWS lambda functions.
+2. Update the following files with the appropriate account data.
+  * src/device/config.js
+    * YOUR-DEVICE-REST-API-ENDPOINT-HOST
+    * YOUR-DEVICE-THING-NAME
+  * src/aws/lambda/quemesh/config.js
+    * YOUR-AMAZON-ECHO-APP-ID
+    * YOUR-FIREBASE-APP-NAME
+    * YOUR-FIREBASE-EMAIL
+    * YOUR-FIREBASE-PASSWORD
+
+3. Create the AWS lambda functions.
   * deviceStateSave ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/deviceStateSave))
   * quemesh ([Source](https://github.com/javaday/EchoIotDemo/tree/master/src/aws/lambda/quemesh))
 3. Configure an IoT thing in Amazon IoT.
@@ -19,20 +29,12 @@ You will need to complete the following steps to re-create the integration.
 
 You will need to replace the settings in ALL-CAPS in the following files:
 
-src/device/config.js
-	YOUR-DEVICE-REST-API-ENDPOINT-HOST
-	YOUR-DEVICE-THING-NAME
 	
 src/device/certs/
 	root-CA.crt
 	certificate.pem.crt
 	private.pem.key
 
-src/aws/lambda/quemesh/config.js
-	YOUR-AMAZON-ECHO-APP-ID
-	YOUR-FIREBASE-APP-NAME
-	YOUR-FIREBASE-EMAIL
-	YOUR-FIREBASE-PASSWORD
 	
 src/aws/lambda/quemesh/device.js
 	YOUR-DEVICE-REST-API-ENDPOINT-HOST
