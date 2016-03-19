@@ -50,7 +50,7 @@ You will need an Amazon AWS developer account and a Firebase account. You will a
     * certificate.pem.crt
     * private.pem.key
 2. Download this [Certificate Of Authority](https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-Class%203-Public-Primary-Certification-Authority-G5.pem) and save it to src/device/certs/root-CA.crt
-3. Create a rule (SELECT * FROM 'quemesh-device-state') to forward messages to the 'deviceStateSave' lambda function.
+3. Create a rule (SELECT * FROM 'quemesh-device-state') and action to forward messages to the 'deviceStateSave' lambda function.
 
 	
 	
