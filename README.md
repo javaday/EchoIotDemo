@@ -10,7 +10,12 @@ You will need to complete the following steps to re-create the integration.
 * [AWS Lambda Functions](#lambda)
 * [AWS IoT](#iot)
 
-3. Update the following source files with the appropriate account data.
+<a name="accounts"></a>
+## Required Accounts
+  * [Amazon AWS Account](https://www.amazon.com/ap/signin)
+  * [Firebase Account](https://www.firebase.com/login/)
+
+**Note:** The following source files will need to be updated with the appropriate account data.
   * src/device/config.js
     * YOUR-DEVICE-REST-API-ENDPOINT-HOST
     * YOUR-DEVICE-THING-NAME
@@ -29,11 +34,6 @@ You will need to complete the following steps to re-create the integration.
     * YOUR-AMAZON-ECHO-APP-ID
     * YOUR-AMAZON-ECHO-SDK-ACCOUNT-ID
 
-<a name="accounts"></a>
-## Required Accounts
-  * [Amazon AWS Account](https://www.amazon.com/ap/signin)
-  * [Firebase Account](https://www.firebase.com/login/)
-
 <a name="alexa"></a>
 ## Alexa Skills Application
 
@@ -46,13 +46,15 @@ You will need to complete the following steps to re-create the integration.
 ## AWS IoT
   * Connect a device and download the certs.
     * Download to src/device/certs/
-    * Rename to 
+    * Rename to:
+      * root-CA.crt
+      * certificate.pem.crt
+      * private.pem.key
   * Create a rule (SELECT * FROM 'quemesh-device-state') to forward messages to the 'deviceStateSave' lambda function.
 
-src/device/certs/
-	root-CA.crt
-	certificate.pem.crt
-	private.pem.key
+	
+	
+	
 
 	
 
