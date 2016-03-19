@@ -44,13 +44,13 @@ You will need an Amazon AWS developer account and a Firebase account. You will a
 
 <a name="iot"></a>
 ## AWS IoT
-  * Connect a device and download the certs.
-    * Download to src/device/certs/
-    * Rename to:
-      * root-CA.crt
-      * certificate.pem.crt
-      * private.pem.key
-  * Create a rule (SELECT * FROM 'quemesh-device-state') to forward messages to the 'deviceStateSave' lambda function.
+1. Connect a device and download the certs.
+  * Download to src/device/certs/
+  * Rename to:
+    * certificate.pem.crt
+    * private.pem.key
+2. Download [this](https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-Class%203-Public-Primary-Certification-Authority-G5.pem) certificate of authority and save it to src/device/certs/root-CA.crt
+3. Create a rule (SELECT * FROM 'quemesh-device-state') to forward messages to the 'deviceStateSave' lambda function.
 
 	
 	
